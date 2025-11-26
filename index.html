@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Harsh Aryan Jalan – Academic Portfolio</title>
+  <title>Harsh Aryan Jalan – Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Academic portfolio of Harsh Aryan Jalan, PhD student in theoretical and computational chemistry at USC." />
-
+  <meta name="description" content="Home page of Harsh Aryan Jalan, PhD student in theoretical and computational chemistry at USC." />
   <style>
     :root {
       --bg: #f7f7f9;
@@ -17,28 +16,16 @@
       --border: #e0e0e0;
       --max-width: 960px;
     }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       background: var(--bg);
       color: var(--fg);
+      line-length: 1.6;
       line-height: 1.6;
     }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
     header {
       position: sticky;
@@ -48,7 +35,6 @@
       backdrop-filter: blur(6px);
       border-bottom: 1px solid var(--border);
     }
-
     .nav-inner {
       max-width: var(--max-width);
       margin: 0 auto;
@@ -58,13 +44,7 @@
       justify-content: space-between;
       gap: 1rem;
     }
-
-    .nav-title {
-      font-weight: 600;
-      font-size: 1rem;
-      white-space: nowrap;
-    }
-
+    .nav-title { font-weight: 600; font-size: 1rem; white-space: nowrap; }
     nav ul {
       list-style: none;
       display: flex;
@@ -72,12 +52,10 @@
       gap: 0.75rem;
       font-size: 0.9rem;
     }
-
     nav a {
       padding: 0.2rem 0;
       border-bottom: 2px solid transparent;
     }
-
     nav a:hover {
       border-bottom-color: var(--accent);
       text-decoration: none;
@@ -87,10 +65,6 @@
       max-width: var(--max-width);
       margin: 0 auto;
       padding: 1.5rem 1rem 3rem 1rem;
-    }
-
-    section {
-      margin-bottom: 2.5rem;
     }
 
     .hero {
@@ -103,25 +77,20 @@
       border-radius: 14px;
       border: 1px solid #d2dfef;
       margin-bottom: 2rem;
+      margin-top: 1rem;
     }
-
     .hero-title {
       font-size: 2rem;
       font-weight: 700;
       margin-bottom: 0.3rem;
     }
-
     .hero-subtitle {
       font-size: 1rem;
       font-weight: 500;
       color: var(--muted);
       margin-bottom: 0.75rem;
     }
-
-    .hero p {
-      font-size: 0.96rem;
-      margin-bottom: 0.75rem;
-    }
+    .hero p { font-size: 0.96rem; margin-bottom: 0.75rem; }
 
     .hero-tags {
       display: flex;
@@ -129,7 +98,6 @@
       gap: 0.4rem;
       margin-top: 0.5rem;
     }
-
     .tag {
       font-size: 0.75rem;
       padding: 0.2rem 0.55rem;
@@ -146,8 +114,7 @@
       font-size: 0.85rem;
       color: var(--muted);
     }
-
-    .photo-placeholder {
+    .photo-circle {
       width: 160px;
       height: 160px;
       border-radius: 50%;
@@ -156,57 +123,15 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 0.8rem;
+      overflow: hidden;
       margin: 0 auto 0.6rem;
-      color: var(--muted);
     }
-
-    h2 {
-      font-size: 1.4rem;
-      margin-bottom: 0.6rem;
-      border-bottom: 2px solid var(--border);
-      padding-bottom: 0.2rem;
-      font-weight: 600;
+    .photo-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
-
-    h3 {
-      font-size: 1.05rem;
-      margin-top: 0.8rem;
-      margin-bottom: 0.15rem;
-      font-weight: 600;
-    }
-
-    .text-muted {
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-
-    .two-column {
-      display: grid;
-      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
-      gap: 1.5rem;
-    }
-
-    .card {
-      background: var(--card-bg);
-      border-radius: 12px;
-      border: 1px solid var(--border);
-      padding: 1rem 1.1rem;
-      margin-top: 0.6rem;
-    }
-
-    ul.basic-list {
-      margin-left: 1.1rem;
-      margin-top: 0.4rem;
-    }
-
-    ul.basic-list li {
-      margin-bottom: 0.25rem;
-    }
-
-    .education-item {
-      margin-bottom: 0.6rem;
-    }
+    .photo-caption { font-size: 0.8rem; color: var(--muted); }
 
     .btn-row {
       display: flex;
@@ -214,7 +139,6 @@
       gap: 0.6rem;
       margin-top: 0.75rem;
     }
-
     .btn {
       display: inline-block;
       padding: 0.4rem 0.9rem;
@@ -225,24 +149,14 @@
       cursor: pointer;
       text-decoration: none;
     }
-
     .btn-primary {
       background: var(--accent);
       color: #ffffff;
     }
-
-    .btn-primary:hover {
-      opacity: 0.9;
-      text-decoration: none;
-    }
-
+    .btn-primary:hover { opacity: 0.9; text-decoration: none; }
     .btn-outline {
       background: transparent;
       color: var(--accent);
-    }
-
-    .pub-list li {
-      margin-bottom: 0.5rem;
     }
 
     footer {
@@ -255,23 +169,15 @@
     }
 
     @media (max-width: 800px) {
-      .hero,
-      .two-column {
-        grid-template-columns: minmax(0, 1fr);
-      }
+      .hero { grid-template-columns: minmax(0, 1fr); }
       .nav-inner {
         flex-direction: column;
         align-items: flex-start;
       }
     }
-
     @media (max-width: 480px) {
-      .hero-title {
-        font-size: 1.6rem;
-      }
-      main {
-        padding-inline: 0.75rem;
-      }
+      .hero-title { font-size: 1.6rem; }
+      main { padding-inline: 0.75rem; }
     }
   </style>
 </head>
@@ -282,25 +188,26 @@
     <div class="nav-title">Harsh Aryan Jalan</div>
     <nav>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#teaching">Teaching</a></li>
-        <li><a href="#cv">CV</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
 <main>
-
-  <!-- ================= HOME / HERO ================= -->
   <section id="home">
     <div class="hero">
       <div>
         <div class="hero-title">Harsh Aryan Jalan</div>
-        <div class="hero-subtitle">PhD Student, Theoretical &amp; Computational Chemistry<br />University of Southern California</div>
+        <div class="hero-subtitle">
+          PhD Student, Theoretical &amp; Computational Chemistry<br />
+          University of Southern California
+        </div>
 
         <p>
           I am a second-year PhD student in theoretical and computational chemistry at the University of Southern California.
@@ -320,183 +227,21 @@
         </div>
 
         <div class="btn-row">
-          <!-- Replace cv.pdf with your actual CV filename once uploaded -->
-          <a class="btn btn-primary" href="cv.pdf" target="_blank">Download CV</a>
-          <a class="btn btn-outline" href="#contact">Email / Contact</a>
+          <a class="btn btn-primary" href="cv.html">View CV</a>
+          <a class="btn btn-outline" href="research.html">View Research</a>
         </div>
       </div>
 
       <div class="hero-photo">
-        <div class="photo-placeholder">
-         <img src="small-hjalan.jpg" alt="Profile photo" style="width:160px; height:160px; border-radius:50%; border:3px solid #e2edf7; object-fit:cover;">
-</div>
+        <div class="photo-circle">
+          <img src="small-jalan.jpg" alt="Photo of Harsh Aryan Jalan">
         </div>
-        <div class="text-muted">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= RESEARCH ================= -->
-  <section id="research">
-    <h2>Research</h2>
-
-    <p>
-      Broadly, I am interested in understanding how molecular structure and vibrational motion control
-      electronic relaxation pathways in organic chromophores. My work combines electronic structure theory,
-      vibronic models, and rate theories based on Fermi's golden rule.
-    </p>
-
-    <div class="two-column">
-      <div>
-        <h3>Research Areas</h3>
-        <div class="card">
-          <ul class="basic-list">
-            <li>Non-radiative decay in organic chromophores (e.g., azulene derivatives, spiropyran/merocyanine systems).</li>
-            <li>Time-dependent approaches to internal conversion and intersystem crossing using thermal vibrational correlation functions.</li>
-            <li>Development and application of <code>ezFCF</code> for vibronic structure and non-radiative rate calculations.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div>
-        <h3>Current Directions</h3>
-        <div class="card">
-          <ul class="basic-list">
-            <li>Implementing and benchmarking time-dependent FCWD-based internal conversion rate calculations using effective-mode models.</li>
-            <li>Analyzing robustness of excitation-energy transfer in model systems inspired by photosynthetic complexes.</li>
-            <li>Exploring solvent and environment effects on non-radiative pathways via reduced models and kinetic descriptions.</li>
-          </ul>
+        <div class="photo-caption">
+          Harsh Aryan Jalan
         </div>
       </div>
     </div>
   </section>
-
-  <!-- ================= PUBLICATIONS ================= -->
-  <section id="publications">
-    <h2>Publications &amp; Presentations</h2>
-
-    <p class="text-muted">
-      (You can update this section as you publish papers or give talks.)
-    </p>
-
-    <div class="card">
-      <ul class="pub-list basic-list">
-        <li>
-          <strong>Coming soon.</strong><br />
-          I am currently working on projects related to internal conversion rates and vibronic modeling of non-radiative processes.
-        </li>
-        <!-- Example format you can use later:
-        <li>
-          A. I. Krylov, H. A. Jalan, <em>Title of the paper</em>, Journal Name <strong>Volume</strong>, Pages (Year).
-          <a href="https://doi.org/..." target="_blank">DOI</a>
-        </li>
-        -->
-      </ul>
-    </div>
-  </section>
-
-  <!-- ================= TEACHING ================= -->
-  <section id="teaching">
-    <h2>Teaching</h2>
-
-    <div class="two-column">
-      <div>
-        <h3>Teaching Experience</h3>
-        <div class="card">
-          <ul class="basic-list">
-            <li>
-              Graduate Teaching Assistant, <strong>CHEM 115A – General Chemistry</strong>, University of Southern California.<br />
-              Laboratory instruction, safety training, and guidance on foundational physical and inorganic chemistry experiments.
-            </li>
-            <!-- Add more courses/semesters as needed -->
-          </ul>
-        </div>
-      </div>
-
-      <div>
-        <h3>Teaching Interests</h3>
-        <div class="card">
-          <ul class="basic-list">
-            <li>Physical chemistry (quantum chemistry, spectroscopy, statistical mechanics).</li>
-            <li>Introductory computational chemistry and scientific programming for chemists.</li>
-            <li>Bridging conceptual understanding with hands-on computation and visualization.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= CV ================= -->
-  <section id="cv">
-    <h2>Curriculum Vitae</h2>
-
-    <div class="two-column">
-      <div>
-        <h3>Education</h3>
-        <div class="card">
-          <div class="education-item">
-            <strong>PhD in Chemistry</strong>, University of Southern California<br />
-            <span class="text-muted">Theoretical &amp; Computational Chemistry &mdash; 2023&ndash;present</span>
-          </div>
-          <div class="education-item">
-            <strong>MS in Chemistry</strong>, Indian Institute of Technology Bombay<br />
-            <span class="text-muted">2022&ndash;2024</span>
-          </div>
-          <div class="education-item">
-            <strong>BS in Chemistry</strong>, Birla Institute of Technology, Mesra<br />
-            <span class="text-muted">2019&ndash;2022</span>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <h3>CV Download</h3>
-        <div class="card">
-          <p>
-            A full CV including detailed coursework, teaching experience, conferences, and research projects is available as a PDF.
-          </p>
-          <div class="btn-row">
-            <!-- Again, replace cv.pdf with the actual file you upload -->
-            <a class="btn btn-primary" href="cv.pdf" target="_blank">Open CV (PDF)</a>
-          </div>
-          <p class="text-muted" style="margin-top:0.6rem;">
-            To enable this link, upload your CV as <code>cv.pdf</code> to the root of this repository.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= CONTACT ================= -->
-  <section id="contact">
-    <h2>Contact</h2>
-
-    <div class="card">
-      <p>
-        The best way to reach me is by email.
-      </p>
-      <ul class="basic-list">
-        <li>
-          <strong>Email:</strong>
-          <!-- Replace the placeholder email below with your real one -->
-          <a href="mailto:your.email@usc.edu">your.email@usc.edu</a>
-        </li>
-        <li>
-          <strong>Institution:</strong> Department of Chemistry, University of Southern California
-        </li>
-        <!-- Uncomment and fill in when ready:
-        <li>
-          <strong>Google Scholar:</strong> <a href="https://scholar.google.com/..." target="_blank">Profile</a>
-        </li>
-        <li>
-          <strong>ORCID:</strong> <a href="https://orcid.org/..." target="_blank">0000-0000-0000-0000</a>
-        </li>
-        -->
-      </ul>
-    </div>
-  </section>
-
 </main>
 
 <footer>
@@ -504,7 +249,6 @@
 </footer>
 
 <script>
-  // Automatically set the current year in the footer
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 
